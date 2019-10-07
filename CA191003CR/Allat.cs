@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CA191003CR
 {
-    class Allat
+    abstract class Allat
     {
         public string Nev { get; set; }
         public DateTime Szul { get; set; }
