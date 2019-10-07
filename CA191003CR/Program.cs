@@ -75,6 +75,22 @@ namespace CA191003CR
                 s.Save();
             }
 
+            var cica = new Cica() { Szul = new DateTime(1984, 02, 14) };
+
+            Console.WriteLine("cica életkora: " + cica.Eletkor);
+
+            int? valami = null;
+
+            //int valami2 = null;
+
+            var x = 43;
+
+            var megall = (x > 30) ? "nagyobb m 30" : null;
+
+            Console.WriteLine($"{((x > 30) ? "nagyobb m 30" : null)}");
+
+            Console.WriteLine(megall);
+
             Console.ReadKey();
         }
     }

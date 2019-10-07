@@ -14,6 +14,10 @@ namespace CA191003CR
         public int Elet { get; set; } = 9;
         public ConsoleColor Szin { get; set; }
 
+        public int Eletkor => DateTime.Now.Year - Szul.Year;
+
+        public void Damage(int dmg) => Elet -= dmg;
+
         public void Save()
         {
             var sw = new StreamWriter(
